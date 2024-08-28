@@ -416,7 +416,7 @@ img{
 
 .newsletter-form input[type="email"] {
     padding: 10px;
-    font-size: 1.6vh;
+    font-size: 2vh;
     border: 1px solid #cccccc;
     border-radius: 5px;
     width: 100%;
@@ -425,7 +425,7 @@ img{
 
 .newsletter-form button {
     padding: 1vh;
-    font-size: 1.6vh;
+    font-size: 2vh;
     background-color: #007bff; /* Fundo azul do botão */
     color: white;
     border: none;
@@ -750,6 +750,7 @@ footer a:hover{
     .header-menu ul li a p{
         font-size: 0.9rem;
         padding: 2.5px;
+        justify-content: space-between;
     }
     
     .main-content {
@@ -840,6 +841,7 @@ footer a:hover{
     .header-menu ul li a p{
         font-size: 1.8rem;
         padding: 1.3vh;
+        justify-content: space-between;
     }
     
     .main-content {
