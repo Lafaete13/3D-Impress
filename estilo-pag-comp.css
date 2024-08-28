@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Lalezar&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{margin: 0; padding: 0;}
+
+header {
+    width: 100%;
+    background-color: rgba(23, 21, 40, 0.8);
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.icon {
+    color: white;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.home-icon img {
+    margin-right: auto;
+    width: 60px;
+    padding: 10px;
+}
+
+.menu-icon {
+    margin-right: 20px; /* Adiciona espaço entre o botão do menu e o input de pesquisa */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 13px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+}
+
+.search-container .search-btn {
+    font-size: 20px;
+    background-color: #555;
+    border: none;
+    padding: 9px 9px;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+}
+
+.search-container .search-btn i {
+    color: white;
+}
+
+.cart-icon, .profile-icon {
+    margin-left: 30px;
+}
+
+
+.cart-icon {
+    position: relative;
+}
+
+/* Ícone de perfil com cor personalizada */
+.cart-icon i {
+    color: #ffffff; /* Cor azul */
+}
+
+/* Mudança de cor ao passar o mouse */
+.cart-icon i:hover {
+    color: #0095da; /* Cor azul ao passar o mouse */
+}
+
+.cart-icon::after {
+    content: '3'; /* Exemplo de quantidade de itens no carrinho */
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: rgb(255, 4, 4);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+/* Ícone de perfil com cor personalizada */
+.profile-icon i {
+    color: #ffffff; /* Cor azul */
+    margin-right: 20px;
+}
+
+/* Mudança de cor ao passar o mouse */
+.profile-icon i:hover {
+    color: #0095da; /* Cor azul ao passar o mouse */
+}
+
+
+.icon profile-icon::after {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/* Estilo do Banner */
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 0%;
+    display: block;
+}
+
+
+
+/* produtos  PRODUTOS PRODUTOS PRODUTOS*/
+.pg-comp-container {
+    background-color: #308DF8;
+    display: flex;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+}
+
+.pg-comp-filtro-lateral {
+    width: 250px;
+    height: 250px;
+    background-color: #f4f4f4;
+    margin: 88px 12px;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}
+
+.pg-comp-filtro-lateral-item {
+    margin-bottom: 20px;
+}
+
+.pg-comp-filtro-lateral-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pg-comp-principal {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.pg-comp-filtro-sup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.sort-btn, .view-toggle {
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    width: 5vh;
+}
+
+#pg-comp-container-grade{
+    background-color: #F2F2F2;
+}
+
+.pg-comp-grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pg-comp-grade-botoes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+     margin-bottom: 1vh;
+    /* background-color: black; */
+}
+
+.pg-comp-grade-produtos-botao1, .pg-comp-grade-produtos-botao2{
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.pg-comp-grade-produtos-botao1{
+    background-color: #FF5252;
+}
+
+.pg-comp-grade-produtos-botao2{
+    background-color: #4CAF50;
+}
+
+.pg-comp-grade-produtos {
+    background-color: #D9D9D9;
+    margin: 25px;
+    width: auto;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.pg-comp-grade-produtos:hover{
+    box-shadow: 10px 5px 5px #C7C7C7;
+}
+
+.pg-comp-grade-produtos img {
+    width: 100%;
+    height: 50vh;
+    border-bottom: 1px solid #ddd;
+}
+
+.pg-comp-grade-produtos-botao {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#pg-comp-elipses{
+    width: 20%;
+    align-items: center;
+    background-color: white;
+}
+
+.fa-ellipsis {
+    font-size: 10vh;
+    color: #D3D3D3;
+    margin-left: 50%;
+    cursor: pointer;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 100%;  /* Ocupa 100% da largura da tela */  
+}
+
+footer p{
+    padding: 1vh;
+    text-align: center;
+    font-size:1.5rem;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+footer a:hover{
+    color: #0056b3;
+}
+}
+
+
+
+/*trabalhar responsividade */

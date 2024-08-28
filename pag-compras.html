@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3D Compras</title>
+	<meta name="author" content="Lafaete, Caio, Daniel" />
+	<meta name="keywords" content="impressão 3D, 3d, impressao, impressora"/>
+	<meta name="description" content="site de vendas de impressões 3D feitas por encomenda">
+	<link rel="stylesheet" type="text/css" href="estilo-pag-comp.css">
+</head>
+<body>
+<!-- CABEÇALHO -->
+    <header>
+
+        <!-- PARTE COM LOGO, PESQUISA, ÍCONES DE CARRINHO, LOGIN -->
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="icon home-icon">
+                <img class="fas fa-home"src="img/logo.png"/>
+            </div>
+
+            <div> <!--COLOCAR ICONE DO MENU -->
+                
+            </div>
+
+            <!-- BALÃO DE PESQUISA -->
+            <div class="center-container">
+                <div class="search-container">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>    
+            </div>
+
+            <!-- ÍCONE CARRINHO -->
+            <div class="icon cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+
+            <!-- ÍCONE DE LOGIN -->
+            <div class="icon profile-icon">
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+        
+        <!-- BANNER 3D IMPRESS -->
+        <section class="banner">
+            <img src="img/banner.png" alt="banner">
+        </section>
+    </header>
+
+
+
+<!-- SEÇÃO DE PRODUTOS -->
+    <!-- CONTAINER QUE ENGLOBA TODA A PARTE CENTRAL -->
+    <section class="pg-comp-container">
+
+        <!-- FILTRO LATERAL -->
+        <nav class="pg-comp-filtro-lateral">
+            <!-- ITEM DESTAQUES -->
+        	<div class="pg-comp-filtro-lateral-item">
+                <div class="pg-comp-filtro-lateral-titulo" id="category-toggle">
+                	<button class="toggle-btn"><i class="fa-solid fa-plus"></i></button>
+                    <span>Destaques</span>
+                </div>
+            </div>
+
+            <!-- ITEM CATEGORIAS -->
+            <div class="pg-comp-filtro-lateral-item">
+                <div class="pg-comp-filtro-lateral-titulo" id="category-toggle">
+                	<button class="toggle-btn"><i class="fa-solid fa-plus"></i></button>
+                    <span>Categorias</span>
+                </div>
+            </div>
+
+            <!-- ITEM PREÇO -->
+            <div class="pg-comp-filtro-lateral-item">
+                <div class="pg-comp-filtro-lateral-titulo" id="price-toggle">
+                	<button class="toggle-btn"><i class="fa-solid fa-plus"></i></button>
+                	<span>Preço</span>
+                </div>
+            </div> 
+        </nav>
+
+
+
+        <!-- ÁREA DO MEIO -->
+        <main class="pg-comp-principal">
+
+        	<!-- ORDENADOR, BUSCADOR E BOTÃO DE MUDAR LAYOUT DOS PRODUTOS -->
+            <nav class="pg-comp-filtro-sup">
+                <button class="sort-btn"><i class="fa-solid fa-arrows-up-down"></i></button>
+                <input type="text" placeholder="Pesquisar por produto..." class="search-bar">
+                <button class="view-toggle"><i class="fa-solid fa-table-cells-large"></i></button>
+            </nav>
+
+            <!-- BLOCO COM PRODUTOS -->
+            <section id="pg-comp-container-grade">
+                <div class="pg-comp-grade">
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/elves.png" alt="Produto 1">
+
+                        <div class="pg-comp-grade-botoes">
+                        <button class="pg-comp-grade-produtos-botao1"><p>Saiba mais</p></button>
+                        <button class="pg-comp-grade-produtos-botao2"><p>Comprar</p></button>
+                        </div>
+
+                    </div>
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/orus.png" alt="Produto 2">
+
+                        <div class="pg-comp-grade-botoes">
+                        <button class="pg-comp-grade-produtos-botao1"><p>Saiba mais</p></button>
+                        <button class="pg-comp-grade-produtos-botao2"><p>Comprar</p></button>
+                        </div>
+                    </div>
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/camaleao.png" alt="Produto 3">
+
+                        <div class="pg-comp-grade-botoes">
+                        <button class="pg-comp-grade-produtos-botao1"><p>Saiba mais</p></button>
+                        <button class="pg-comp-grade-produtos-botao2"><p>Comprar</p></button>
+                        </div>
+                    </div>
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/age.png" alt="Produto 4">
+
+                        <div class="pg-comp-grade-botoes">
+                        <button class="pg-comp-grade-produtos-botao1"><p>Saiba mais</p></button>
+                        <button class="pg-comp-grade-produtos-botao2"><p>Comprar</p></button>
+                        </div>
+                    </div>
+
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/elves.png" alt="Produto 1">
+
+                        <div class="pg-comp-grade-botoes">
+                        <button class="pg-comp-grade-produtos-botao1"><p>Saiba mais</p></button>
+                        <button class="pg-comp-grade-produtos-botao2"><p>Comprar</p></button>
+                        </div>
+
+                    </div>
+
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/elves.png" alt="Produto 1">
+
+                        <div class="pg-comp-grade-botoes">
+                        <button class="pg-comp-grade-produtos-botao1"><p>Saiba mais</p></button>
+                        <button class="pg-comp-grade-produtos-botao2"><p>Comprar</p></button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-ellipsis"></i>
+            </section>
+
+        </main>
+
+
+    </section>
+    <footer>
+        <p>Desenvolvido por <a href="https://www.instagram.com/lafa_avs/" target="_blank">Lafaete Dias</a> - <a href="https://www.instagram.com/lafa_avs/" target="_blank"> Caio </a> - <a href="https://www.instagram.com/lafa_avs/" target="_blank">Daniel</a> - 2024</p>
+    </footer>
+</body>
+</html>
