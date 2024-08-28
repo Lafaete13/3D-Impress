@@ -747,9 +747,12 @@ footer a:hover{
         display: flex;  /* Define o layout dos itens como flexível */
     }
 
+    .header-menu ul li a{
+        padding: 0.5vh;
+    }
+
     .header-menu ul li a p{
-        font-size: 1rem;
-        padding: 0.8vh;
+        font-size: 0.9rem;
     }
     
     .main-content {
