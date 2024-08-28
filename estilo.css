@@ -1,0 +1,882 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Lalezar&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header {
+    width: 85%;
+    background-color: #171528;
+    clear: both;
+    float: right;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.icon {
+    color: white;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.home-icon img {
+    margin-right: auto;
+    width: 6vh;
+    padding: 10px;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    max-width: 50vh;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 1.3vh;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+}
+
+.search-container .search-btn {
+    font-size: 20px;
+    background-color: #555;
+    border: none;
+    padding: 0.9vh 0.9vh;
+    border-radius: 0 3vh 3vh 0;
+    cursor: pointer;
+}
+
+.search-container .search-btn i {
+    color: white;
+}
+
+.cart-icon, .profile-icon {
+    margin-left: 3vh;
+}
+
+.center-container .menu-icon{
+    margin-right: 2vhx;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+/* Ícone de perfil com cor personalizada */
+.cart-icon i {
+    color: #ffffff; /* Cor azul */
+}
+
+/* Mudança de cor ao passar o mouse */
+.cart-icon i:hover {
+    color: #0095da; /* Cor azul ao passar o mouse */
+}
+
+.cart-icon::after {
+    content: '3'; /* Exemplo de quantidade de itens no carrinho */
+    position: absolute;
+    top: -1vh;
+    right: -1vh;
+    background-color: rgb(255, 4, 4);
+    color: white;
+    border-radius: 50%;
+    padding: 0.2vh 0.6vh;
+    font-size: 1.2vh;
+}
+/* Ícone de perfil com cor personalizada */
+.profile-icon i {
+    color: #ffffff; /* Cor azul */
+    margin-right: 2vh;
+}
+
+/* Mudança de cor ao passar o mouse */
+.profile-icon i:hover {
+    color: #0095da; /* Cor azul ao passar o mouse */
+}
+
+
+.icon profile-icon::after {
+    position: absolute;
+    top: -1vh;
+    right: -1vh;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border-radius: 50%;
+    padding: 0.2vh 0.6vh;
+    font-size: 1.2vh;
+}
+
+/* Estilo do Banner */
+.banner {
+    clear: both;
+    float: right;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 0%;
+    display: block;
+    
+}
+
+/* Estilo para o menu lateral */
+
+.main-content{
+    width: 15%;
+    float: left;
+    top: 0;
+    background-color: #4C47D3;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.header-menu {
+    width: 100%;
+    color: white;
+    padding: 3vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Estilo para a lista de itens no menu lateral */
+.header-menu ul {
+    position: fixed;
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-menu ul li {
+    margin: 2vh 0;
+    width: 100%;
+}
+
+.header-menu ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 0.4vh;
+    display: block;
+    width: 100%;
+}
+
+.header-menu ul li a p{
+    font-size: 1.7rem;
+    transition: background-color 0.3s;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.header-menu ul li a:hover {
+    background-color: #7773db;  /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo da seção DESTAQUES */
+
+.destaques {
+    width: 85%;
+    float: right;
+    background-color: #ffffff;
+}
+
+.destaques h1 {
+    padding-top: 2vh;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carousel-container img{/* tamanho da imagem na parte de destaques */
+    width:25vh;
+}
+
+.destaques p{
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.carousel-container {
+    padding: 4vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel .card{
+    border: 1px solid #000000;
+}
+
+.card {
+    min-width: 25vh;
+    margin: 0 1vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.671);
+    color: white;
+    border: none;
+    padding: 1.1vh;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-btn {
+    left: 20px;
+}
+
+.right-btn {
+    right: 20px;
+}
+
+/* Seção miniaturas */
+
+.quadros-section{
+    width: 85%;
+    float: right;
+    background-color: #308DF8;
+}
+
+.quadros-section h2 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quadros-container img{ /* tamanho da imagem na parte de destaques */
+    width: 25vh;
+}
+
+.quadros-section p{
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.quadros-container {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para garantir que os cards fiquem em múltiplas linhas se necessário */
+}
+
+.quadro-card {
+    flex: none;
+    min-width: 25vh; /* Ajuste conforme necessário */
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.quadro-card:hover {
+    transform: translateY(-5px); /* Pequeno efeito de elevação ao passar o mouse */
+}
+
+/* Estilo da Seção "Quem Somos" */
+.quem-somos {
+    width: 85%;
+    float: right;
+    background-color: #ffffff; /* Fundo branco */
+    padding-bottom: 2vh;
+}
+
+.quem-somos .container {
+    max-width: 70%;
+    margin: 0 auto; /* Centraliza a seção na página */
+    border: 2px solid #cccccc; /* Borda cinza ao redor do texto */
+    padding: 2vh;
+    border-radius: 1vh; /* Bordas levemente arredondadas */
+    background-color: #f9f9f9; /* Fundo levemente cinza para contraste */
+}
+
+.quem-somos h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 2vh;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 2vh;
+}
+
+.quem-somos p {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    color: #000000;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Estilo da Seção de Newsletter */
+.newsletter {
+    width: 85%;
+    float: right;
+    background-color: #308DF8; /* Fundo branco */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.newsletter h2 {
+    padding-top: 2vh;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 2vh;
+    text-align: center;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.newsletter-container {
+    background-color: #ffffff; /* Retângulo branco */
+    border: 2px solid #cccccc; /* Borda cinza para destacar o retângulo */
+    padding: 3vh;
+    border-radius: 10px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.newsletter p {
+    font-size: 1.4rem;
+    color: #555555;
+    margin-bottom: 2vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 15px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    font-size: 1.6vh;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.newsletter-form button {
+    padding: 1vh;
+    font-size: 1.6vh;
+    background-color: #007bff; /* Fundo azul do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.newsletter-form button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+/*rodape da pagina*/
+
+footer{
+    width: 100%;
+    float: left;
+	background-color: #000;
+    margin-bottom: 0;
+}
+
+footer p{
+    padding: 1vh;
+	text-align: center;
+	color: #fff;
+    font-size:1.5rem;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+footer a{
+    text-decoration: none;
+	color: #fff;
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+footer a:hover{
+	color: #0056b3;
+}
+
+/*pagina de login*/
+#login-pag{
+    width: 100%;
+    background-color: #171528;
+}
+.home-login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home img{
+    padding: 4vh;
+    width: 10vh;
+}
+
+.pag-login {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinha o conteúdo no centro */
+    margin: 0;
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5vh;
+    width: 35vh;
+    text-align: center;
+    margin: 2vh;
+}
+
+.login-container{
+    width: 42vh;
+}
+
+.login-container h1 {
+    margin-bottom: 2vh;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.login-container input {
+    width: 90%;
+    padding: 1vh 1vh;
+    margin-bottom: 1vh;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+#botoes-form{
+	display: flex;
+    justify-content: center;
+}
+
+.login-container button {
+    width: 50%;
+    padding: 1vh;
+    background-color: #1da39c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 4vh;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.login-container button:hover {
+    background-color: #00ffaa;
+}
+
+.login-container button:hover {
+    background-color: #00ffaa;
+}
+
+.login-container .cancel-btn {
+    background-color: #e65a5a;
+    color: #ffffff;
+}
+
+.login-container .cancel-btn:hover {
+    background-color: #ff0000;
+}
+
+.login-container a {
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #0026ff;
+    text-decoration: none;
+    display: block;
+    margin-top: 1vh;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+.login-container a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    margin-top: 1vh;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do Link "Esqueceu a senha?" */
+.forgot-password {
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.5vh;
+}
+
+.forgot-password a:hover {
+    color: #0056b3;
+}
+
+/*pagina de cadrastro*/
+
+#pag-cadastro{
+    width: 100%;
+    background-color: #171528;
+}
+
+.home-cad{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home-cad img{
+    padding: 3vh;
+    width: 10vh;
+}
+
+.cadastro {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinha o conteúdo no centro */
+    margin: 0;
+}
+
+.signup-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45vh;
+    text-align: center;
+    margin: 5vh;
+}
+
+.signup-container h1 {
+    margin-bottom: 2VH;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.signup-container input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #7C7C7C;
+    border-radius: 10px;
+}
+
+#botoes-form{
+	display: flex;
+    justify-content: center;
+}
+
+.signup-container button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 30%;
+    padding: 10px;
+    background-color: #1da39c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px;
+    display: inline-block;
+}
+
+
+.signup-container button:hover {
+    background-color: #00ffaa;
+}
+
+.signup-container .cancel-btn {
+    background-color: #e65a5a;
+    color: #ffffff;
+}
+
+.signup-container .cancel-btn:hover {
+    background-color: #ff0000;
+}
+
+.signup-container a {
+    color: #0026ff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.signup-container a:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 740px) and (min-width: 250px) {
+    header{
+        width: 100%;
+    }
+
+    .main-content{
+        width: 100%;
+        background-color: #4C47D3;
+        z-index: 1;
+        height: 7vh;
+        position: relative;
+        justify-content: center;  /* Centraliza os itens do menu */
+        align-items: center;
+        padding: 0;
+        top: 0;
+    }
+
+    .menu{
+        margin-top: 0;
+    }
+
+    .header-menu ul {
+        position: sticky;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;  /* Define o layout dos itens como flexível */
+    }
+
+    .header-menu ul li a p{
+        font-size: 1rem;
+        padding: 1.3vh;
+    }
+    
+    .main-content {
+        display: flex;
+    }
+
+    .destaques {
+        width: 100%;  /* Ocupa 100% da largura da tela */
+    }
+
+    .quadros-section {
+        width: 100%;  /* Ocupa 100% da largura da tela */
+    }
+
+    .quem-somos {
+        width: 100%;  /* Ocupa 100% da largura da tela */
+    }
+
+    .quem-somos .container {
+        padding: 10px;
+    }
+    
+    .quem-somos .container {
+        max-width: 80%;
+    }
+
+    .quem-somos .container  p{
+        font-size: 1rem;
+    }
+
+    .newsletter {
+        width: 100%;  /* Ocupa 100% da largura da tela */
+    }
+
+    .newsletter .newsletter-container p {
+        font-size: 1rem;
+    }
+
+    footer {
+        width: 100%;  /* Ocupa 100% da largura da tela */  
+        
+    }
+    footer p{
+        font-size: 0.9rem;
+    }
+    
+    footer a{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 1224px) and (min-width: 741px) {
+    header{
+        width: 100%;
+    }
+
+    .main-content{
+        width: 100%;
+        background-color: #4C47D3;
+        z-index: 1;
+        height: 7vh;
+        position: relative;
+        justify-content: center;  /* Centraliza os itens do menu */
+        align-items: center;
+        padding: 0;
+        top: 0;
+    }
+
+    .menu{
+        margin-top: 0;
+    }
+
+    .header-menu ul {
+        position: sticky;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;  /* Define o layout dos itens como flexível */
+    }
+
+    .header-menu ul li a p{
+        font-size: 1.8rem;
+        padding: 1.3vh;
+    }
+    
+    .main-content {
+        display: flex;
+    }
+
+    .destaques {
+        width: 100%;  /* Ocupa 100% da largura da tela */
+    }
+
+    .quadros-section {
+        width: 100%;  /* Ocupa 100% da largura da tela */
+    }
+
+    .quem-somos {
+        width: 100%;  /* Ocupa 100% da largura da tela */
+    }
+
+    .quem-somos p{
+        font-size: 1.5rem;
+    }
+
+    .quem-somos .container {
+        padding: 20px;
+    }
+    .quem-somos .container {
+        max-width: 70%;
+    }
+
+    .quem-somos .container p{
+        font-size: 1.5;
+    }
+
+    .newsletter {
+        width: 100%;  /* Ocupa 100% da largura da tela */
+    }
+
+    .newsletter .newsletter-container p {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        width: 100%;  /* Ocupa 100% da largura da tela */  
+    }
+    footer p{
+        font-size:1.6rem;
+    }
+    
+    footer a{
+        font-size: 1.6rem;
+    }
+
+}
