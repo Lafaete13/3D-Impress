@@ -418,7 +418,7 @@ img{
 
 .newsletter-form input[type="email"] {
     padding: 10px;
-    font-size: 1.6vh;
+    font-size: 2vh;
     border: 1px solid #cccccc;
     border-radius: 5px;
     width: 100%;
@@ -427,7 +427,7 @@ img{
 
 .newsletter-form button {
     padding: 1vh;
-    font-size: 1.6vh;
+    font-size: 2vh;
     background-color: #007bff; /* Fundo azul do botão */
     color: white;
     border: none;
@@ -572,7 +572,7 @@ footer a:hover{
 }
 
 .login-container a {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -606,7 +606,7 @@ footer a:hover{
 .forgot-password a {
     text-decoration: none;
     color: #007bff;
-    font-size: 1.5vh;
+    font-size: 2vh;
 }
 
 .forgot-password a:hover {
@@ -749,12 +749,10 @@ footer a:hover{
         display: flex;  /* Define o layout dos itens como flexível */
     }
 
-    .header-menu ul li a{
-        padding: 0.5vh;
-    }
-
     .header-menu ul li a p{
         font-size: 0.9rem;
+        padding: 2.5px;
+        justify-content: space-between;
     }
     
     .main-content {
@@ -845,6 +843,7 @@ footer a:hover{
     .header-menu ul li a p{
         font-size: 1.8rem;
         padding: 1.3vh;
+        justify-content: space-between;
     }
     
     .main-content {
