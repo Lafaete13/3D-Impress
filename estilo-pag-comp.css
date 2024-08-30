@@ -2,6 +2,8 @@
 
 *{margin: 0; padding: 0;}
 
+/* PARTE DO CABEÇALHO DE ACORDO COM O CÓDIGO MAIS ANTIGO */
+
 header {
     width: 100%;
     background-color: #171528;
@@ -9,6 +11,7 @@ header {
 
 .navbar {
     width: 100%;
+    height: 18vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,7 +132,11 @@ header {
 }
 
 
-/* PÁGINA DE COMPRAS */
+
+
+
+
+/* PÁGINA DE COMPRAS ORGANIZAÇÃO */
 .pg-comp-container { /* Container que engloba todo o miolo da página */
     font-family: Roboto, sans-serif;
     background-color: #308DF8;
@@ -187,13 +194,12 @@ header {
     margin-left: 35vh;
 }
 
-.barra-pesquisa-filtro {
+.barra-pesquisa-filtro { /* ORGANIZA A DISPOSIÇÃO DO FILTRO SUP */
     display: flex;
     align-items: center;
-    
 }
 
-.barra-pesquisa-filtro input {
+.barra-pesquisa-filtro input { /*edita o espaço de escrever do balao de pesquisa etc */
     width: 100%;
     padding: 10px;
     border-radius: 20px 0 0 20px;
@@ -201,7 +207,7 @@ header {
     outline: none;
 }
 
-.barra-pesquisa-filtro .search-btn{
+.barra-pesquisa-filtro .search-btn{ /* edita o botao dentro do ngc de pesquisa */
     font-size: 16.5px;
     background-color: white;
     border: none;
@@ -210,20 +216,11 @@ header {
     cursor: pointer;
 }
 
-.barra-pesquisa-filtro .search-btn i {
+.barra-pesquisa-filtro .search-btn i { /*muda a cor do icone do font awesome */
     color: black;
 }
 
-.search-bar {
-    flex: 1;
-    padding: 7px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 100px;
-    outline: none;
-    cursor: pointer;
-}
+
 
 .filtro-ordenacao { /* Edita especificamente os ícones de seta e grade */
     color: #ffffff;
@@ -232,25 +229,25 @@ header {
     cursor: pointer;
 }
 
-#pg-comp-container-grade{
+#pg-comp-container-grade{ /* põe cor de fundo no container dos cards */
     background-color: #F2F2F2;
 }
 
-.pg-comp-grade {
+.pg-comp-grade { /* usa grid de 3 colunas para deixar os cards */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px; 
 }
 
-.pg-comp-grade-botoes{
+.pg-comp-grade-botoes{ /* ajeita os botoes do card em flex com espaço entre eles */
     display: flex;
     justify-content: space-between;
     margin-top: 1vh;
-     margin-bottom: 1vh;
+    margin-bottom: 1vh;
     /* background-color: black; */
 }
 
-.pg-comp-grade-produtos-botao1, .pg-comp-grade-produtos-botao2{
+.pg-comp-grade-produtos-botao1, .pg-comp-grade-produtos-botao2{ /*edita especificamente os botoes saiba mais e comprar */
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -259,15 +256,15 @@ header {
     color: #FFFFFF;
 }
 
-.pg-comp-grade-produtos-botao1{
+.pg-comp-grade-produtos-botao1{ /* muda cor do botao saiba mais */
     background-color: #FF5252;
 }
 
-.pg-comp-grade-produtos-botao2{
+.pg-comp-grade-produtos-botao2{ /*muda cor do botao comprar */
     background-color: #4CAF50;
 }
 
-.pg-comp-grade-produtos {
+.pg-comp-grade-produtos { /*edita os cards */
     background-color: #D9D9D9;
     margin: 25px;
     width: auto;
@@ -277,34 +274,21 @@ header {
     padding: 10px;
 }
 
-.pg-comp-grade-produtos:hover{
+.pg-comp-grade-produtos:hover{ /*põe sombra quando passa o mouse, sensacao de que tem ação */
     box-shadow: 10px 5px 5px #C7C7C7;
 }
 
-.pg-comp-grade-produtos img {
-    border-radius: 10px;
+.pg-comp-grade-produtos img { /*mexe especificamente na imagem */
     width: 100%;
-
-    border-bottom: 1px solid #ddd;
+    height: 50vh;
 }
 
-.pg-comp-grade-produtos-botao {
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-}
 
-.pg-comp-grade-produtos-botao1:hover, .pg-comp-grade-produtos-botao2:hover{
+.pg-comp-grade-produtos-botao1:hover, .pg-comp-grade-produtos-botao2:hover{ /*põe sombra quando passa o mouse */
     box-shadow: 3px 5px 5px #c0c0c0;
 }
 
-#pg-comp-elipses{
-    width: 20%;
-    align-items: center;
-    background-color: white;
-}
-
-.fa-ellipsis {
+.fa-ellipsis { /* edita o icone de elipses */
     font-size: 10vh;
     color: #D3D3D3;
     margin-left: 50%;
