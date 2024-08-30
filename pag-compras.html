@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>3D Compras</title>
 	<meta name="author" content="Lafaete, Caio, Daniel" />
 	<meta name="keywords" content="impressão 3D, 3d, impressao, impressora"/>
@@ -18,15 +18,17 @@
         <nav class="navbar">
             <!-- LOGO -->
             <div class="icon home-icon">
-                <a href="index.html"><img class="fas fa-home"src="img/logo.png"/></a>
-            </div>
-
-            <div> <!--COLOCAR ICONE DO MENU -->
-                
+                <img class="fas fa-home"src="img/logo.png"/>
             </div>
 
             <!-- BALÃO DE PESQUISA -->
             <div class="center-container">
+
+                <!-- ÍCONE MENU -->
+                <span class="icon menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+
                 <div class="search-container">
                     <input type="text" placeholder="Pesquisar...">
                     <button class="search-btn">
@@ -48,7 +50,7 @@
         
         <!-- BANNER 3D IMPRESS -->
         <section class="banner">
-            <img src="img/banner.png" alt="banner">
+            <img src="img/banner-home.png" alt="banner">
         </section>
     </header>
 
@@ -62,7 +64,7 @@
         <nav class="pg-comp-filtro-lateral">
             <!-- ITEM DESTAQUES -->
         	<div class="pg-comp-filtro-lateral-item">
-                <div class="pg-comp-filtro-lateral-titulo" id="category-toggle">
+                <div class="pg-comp-filtro-lateral-titulo" >
                 	<button class="toggle-btn"><i class="fa-solid fa-plus"></i></button>
                     <span>Destaques</span>
                 </div>
@@ -70,7 +72,7 @@
 
             <!-- ITEM CATEGORIAS -->
             <div class="pg-comp-filtro-lateral-item">
-                <div class="pg-comp-filtro-lateral-titulo" id="category-toggle">
+                <div class="pg-comp-filtro-lateral-titulo" >
                 	<button class="toggle-btn"><i class="fa-solid fa-plus"></i></button>
                     <span>Categorias</span>
                 </div>
@@ -92,16 +94,23 @@
 
         	<!-- ORDENADOR, BUSCADOR E BOTÃO DE MUDAR LAYOUT DOS PRODUTOS -->
             <nav class="pg-comp-filtro-sup">
-                <button class="sort-btn"><i class="fa-solid fa-arrows-up-down"></i></button>
-                <input type="text" placeholder="Pesquisar por produto..." class="search-bar">
-                <button class="view-toggle"><i class="fa-solid fa-table-cells-large"></i></button>
+                <span class="filtro-ordenacao"><i class="fa-solid fa-arrow-down-a-z"></i></span>
+
+                <div class="barra-pesquisa-filtro">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <span class="filtro-ordenacao"><i class="fa-solid fa-table-cells-large"></i></span>
             </nav>
 
             <!-- BLOCO COM PRODUTOS -->
             <section id="pg-comp-container-grade">
                 <div class="pg-comp-grade">
                     <div class="pg-comp-grade-produtos">
-                        <img src="img/elves.png" alt="Produto 1">
+                        <img src="img/bicho.webp" alt="Produto 1">
 
                         <div class="pg-comp-grade-botoes">
                         <button class="pg-comp-grade-produtos-botao1"><p>Saiba mais</p></button>
@@ -135,7 +144,7 @@
                     </div>
 
                     <div class="pg-comp-grade-produtos">
-                        <img src="img/elves.png" alt="Produto 1">
+                        <img src="img/cavalo.webp" alt="Produto 5">
 
                         <div class="pg-comp-grade-botoes">
                         <button class="pg-comp-grade-produtos-botao1"><p>Saiba mais</p></button>
@@ -163,7 +172,7 @@
 
     </section>
     <footer>
-        <p>Desenvolvido por <a href="https://www.instagram.com/lafa_avs/" target="_blank">Lafaete Dias</a> - <a href="https://www.instagram.com/lafa_avs/" target="_blank"> Caio </a> - <a href="https://www.instagram.com/lafa_avs/" target="_blank">Daniel</a> - 2024</p>
+        <p>Desenvolvido por <a href="https://www.instagram.com/lafa_avs/" target="_blank">Lafaete Dias</a> - <a href="https://www.instagram.com/lafa_avs/" target="_blank"> Caio Miranda </a> - <a href="https://www.instagram.com/lafa_avs/" target="_blank">Daniel</a> - 2024</p>
     </footer>
 </body>
 </html>

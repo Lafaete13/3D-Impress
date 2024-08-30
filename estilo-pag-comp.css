@@ -4,11 +4,12 @@
 
 header {
     width: 100%;
-    background-color: rgba(23, 21, 40, 0.8);
+    background-color: #171528;
 }
 
 .navbar {
     width: 100%;
+    height: 18vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -130,28 +131,36 @@ header {
 
 
 
-/* produtos  PRODUTOS PRODUTOS PRODUTOS*/
-.pg-comp-container {
+
+
+
+/* PÁGINA DE COMPRAS */
+.pg-comp-container { /* Container que engloba todo o miolo da página */
+    font-family: Roboto, sans-serif;
     background-color: #308DF8;
     display: flex;
     padding-top: 3vh;
     padding-bottom: 5vh;
 }
 
-.pg-comp-filtro-lateral {
+.pg-comp-filtro-lateral { /* Filtro lateral esquerdo */
     width: 250px;
     height: 250px;
+    font-weight: bold;
     background-color: #f4f4f4;
-    margin: 88px 12px;
+    margin: 96px 12px;
     padding: 15px;
-    border-right: 1px solid #ddd;
 }
 
-.pg-comp-filtro-lateral-item {
+.pg-comp-filtro-lateral-item { /* Retângulos dentro do filtro lateral */
     margin-bottom: 20px;
 }
 
-.pg-comp-filtro-lateral-titulo {
+.pg-comp-filtro-lateral-item:hover { /* Põe sombra nos retângulos internos do filtro */
+    box-shadow: 4px 3px 3px #c7c7c7;
+}
+
+.pg-comp-filtro-lateral-titulo { /* Edita o título dos itens do menu e o ícone de plus */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,43 +170,71 @@ header {
     border-radius: 4px;
 }
 
-
-
-.toggle-btn {
+.toggle-btn { /* Edita o ícone de plus */
     background: none;
     border: none;
     font-size: 16px;
     cursor: pointer;
 }
 
-.pg-comp-principal {
-    flex-grow: 1;
+.pg-comp-principal { /* Container que engloba a caixa com as imagens */
+    flex: 1 1 auto;
     padding: 15px;
 }
 
-.pg-comp-filtro-sup {
+.pg-comp-filtro-sup { /* Edita o filtro superior com ordenador, buscador, e mudança de visualização */
     display: flex;
+    width: 100vh;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 35vh;
+}
+
+.barra-pesquisa-filtro {
+    display: flex;
+    align-items: center;
+    
+}
+
+.barra-pesquisa-filtro input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+}
+
+.barra-pesquisa-filtro .search-btn{
+    font-size: 16.5px;
+    background-color: white;
+    border: none;
+    padding: 8px 8px;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+}
+
+.barra-pesquisa-filtro .search-btn i {
+    color: black;
 }
 
 .search-bar {
     flex: 1;
-    padding: 8px;
+    padding: 7px;
     margin-left: 10px;
     margin-right: 10px;
-    border: 1px solid #ddd;
+    border: none;
     border-radius: 100px;
+    outline: none;
     cursor: pointer;
 }
 
-.sort-btn, .view-toggle {
-    border: none;
+.filtro-ordenacao { /* Edita especificamente os ícones de seta e grade */
+    color: #ffffff;
+    font-size: 3.5vh;
     padding: 8px;
     cursor: pointer;
-    width: 5vh;
 }
 
 #pg-comp-container-grade{
@@ -206,8 +243,8 @@ header {
 
 .pg-comp-grade {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; 
 }
 
 .pg-comp-grade-botoes{
@@ -261,6 +298,10 @@ header {
     border-radius: 10px;
 }
 
+.pg-comp-grade-produtos-botao1:hover, .pg-comp-grade-produtos-botao2:hover{
+    box-shadow: 3px 5px 5px #c0c0c0;
+}
+
 #pg-comp-elipses{
     width: 20%;
     align-items: center;
@@ -284,7 +325,7 @@ footer {
 footer p{
     padding: 1vh;
     text-align: center;
-    font-size:1.5rem;
+    font-size:1.3rem;
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -295,17 +336,114 @@ footer a{
     text-decoration: none;
     color: #fff;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
 footer a:hover{
-    color: #0056b3;
+    color: #308DF8;
 }
+
+/* Responsividade */
+
+@media only screen and (max-width: 449px){
+    .navbar { /* ajusta a altura do menu superior */
+        height: auto;
+    }
+
+    .search-container { /*remove o balão de pesquisa */
+       display: none;
+    }
+
+    .banner{ /*remove o banner */
+        display: none;
+    }
+
+    .pg-comp-container { /* orienta os elementos do container a formarem uma coluna */
+        flex-direction: column;
+        padding: 2vh 1vh;
+    }
+
+    .pg-comp-filtro-lateral { /*remove o filtro */
+       display: none;
+    }
+
+    .pg-comp-filtro-sup { /*remove o balão de pesquisa interno */
+        display: none;
+    }
+
+    .pg-comp-grade { /*os elementos dentro da grade ocupam 1 coluna */
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .pg-comp-grade-produtos img { /*as imagens se ajustam em altura de forma automática */
+        height: auto;
+    }
 }
 
 
+@media only screen and (max-width: 740px) and (min-width: 450px) {
+    .navbar { /* ajusta a altura do menu superior */
+        height: auto;
+    }
 
-/*trabalhar responsividade */
+    .search-container { /*remove o balão de pesquisa */
+       display: none;
+    }
+
+    .banner{ /*remove o banner */
+        display: none;
+    }
+
+    .pg-comp-container { /* orienta os elementos do container a formarem uma coluna */
+        flex-direction: column;
+        padding: 2vh 1vh;
+    }
+
+    .pg-comp-filtro-lateral { /*remove o filtro */
+       display: none;
+    }
+
+    .pg-comp-filtro-sup { /*remove o balão de pesquisa interno */
+        display: flex;
+        width: auto;
+        margin: 3vh 0;
+    }
+
+    .pg-comp-grade { /*os elementos dentro da grade ocupam 1 coluna */
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .pg-comp-grade-produtos img { /*as imagens se ajustam em altura de forma automática */
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 741px) and (max-width: 1224px) {
+    .navbar { /*ajusta a altura do menu suspenso */
+       height: auto;
+       width: 100%;
+    }
+
+    .pg-comp-filtro-lateral{ /* alinha a caixa com a outra caixa */
+        margin-top: 11vh;
+    }
+
+    .pg-comp-filtro-sup { /* garante que o filtro superior se encaixe alinhado com a caixa de baixo */
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .pg-comp-grade { /*apresentação de 2 em 2 e a caixa se ajusta em largura automaticamente */
+        grid-template-columns: 1fr 1fr;
+        width: auto;
+    }
+
+    .pg-comp-grade img{ /*a altura se ajusta automaticamente das imgs */
+        height: auto;
+    }
+}
