@@ -129,10 +129,6 @@ header {
 }
 
 
-
-
-
-
 /* PÁGINA DE COMPRAS */
 .pg-comp-container { /* Container que engloba todo o miolo da página */
     font-family: Roboto, sans-serif;
@@ -286,8 +282,9 @@ header {
 }
 
 .pg-comp-grade-produtos img {
+    border-radius: 10px;
     width: 100%;
-    height: 50vh;
+
     border-bottom: 1px solid #ddd;
 }
 
