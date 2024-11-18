@@ -145,8 +145,9 @@ header {
 }
 
 .pg-comp-filtro-lateral { /* Filtro lateral esquerdo */
-    width: 250px;
-    height: 250px;
+    justify-content: left;
+    width: 45vh;
+    height: 50%;
     font-weight: bold;
     background-color: #f4f4f4;
     margin: 96px 12px;
@@ -164,7 +165,6 @@ header {
 .pg-comp-filtro-lateral-titulo { /* Edita o título dos itens do menu e o ícone de plus */
     display: flex;
     justify-content: space-between;
-    align-items: center;
     cursor: pointer;
     background-color: #ddd;
     padding: 10px;
@@ -174,12 +174,11 @@ header {
 .toggle-btn { /* Edita o ícone de plus */
     background: none;
     border: none;
-    font-size: 16px;
+    font-size: 2.1vh;
     cursor: pointer;
 }
 
 .pg-comp-principal { /* Container que engloba a caixa com as imagens */
-    flex: 1 1 auto;
     padding: 15px;
 }
 
@@ -188,9 +187,9 @@ header {
     width: 100vh;
     align-items: center;
     justify-content: space-evenly;
+    justify-self: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 35vh;
 }
 
 .barra-pesquisa-filtro { /* ORGANIZA A DISPOSIÇÃO DO FILTRO SUP */
@@ -288,14 +287,16 @@ header {
     box-shadow: 3px 5px 5px #c0c0c0;
 }
 
-.fa-ellipsis { /* edita o icone de elipses */
+
+/* edita o ícone de elipses */
+#icone-elipses {
+    display: flex;
+    justify-content: center;
     font-size: 10vh;
     color: #D3D3D3;
-    margin-left: 50%;
     cursor: pointer;
 }
 
-/* RODAPÉ */
 footer {
     background-color: #000000;
     color: #FFFFFF;
