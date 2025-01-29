@@ -2,6 +2,11 @@
 
 *{margin: 0; padding: 0;}
 
+body {
+    height: 100vh;
+}
+
+
 /* PARTE DO CABEÇALHO DE ACORDO COM O CÓDIGO MAIS ANTIGO */
 
 header {
@@ -9,6 +14,13 @@ header {
     background-color: #171528;
 }
 
+h1{
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 2.5rem;
+}
+
+/* EDITA A BARRA SUPERIOR DE MENU */
 .navbar {
     width: 100%;
     display: flex;
@@ -16,215 +28,54 @@ header {
     justify-content: space-between;
 }
 
-.center-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-}
-
+/* EDITA OS ÍCONES DA BARRA SUPERIOR DE MENU */
 .icon {
     color: white;
-    font-size: 3vh;
+    font-size: 6vh;
     cursor: pointer;
 }
 
+/* EDITA A LOGOTIPO DA EMPRESA PRESENTE NA BARRA SUPERIOR DE MENU */
 .home-icon img {
     margin-right: auto;
-    width: 60px;
+    width: 65px;
+    height: auto;
     padding: 10px;
 }
 
-.menu-icon {
-    margin-right: 20px; /* Adiciona espaço entre o botão do menu e o input de pesquisa */
-}
-
-.search-container {
-    display: flex;
-    align-items: center;
-    max-width: 500px;
-}
-
-.search-container input {
-    width: 100%;
-    padding: 13px;
-    border-radius: 20px 0 0 20px;
-    border: none;
-    outline: none;
-}
-
-.search-container .search-btn {
-    font-size: 20px;
-    background-color: #555;
-    border: none;
-    padding: 9px 9px;
-    border-radius: 0 30px 30px 0;
-    cursor: pointer;
-}
-
-.search-container .search-btn i {
-    color: white;
-}
-
-.cart-icon, .profile-icon {
-    margin-left: 30px;
-}
-
-
+/* EDITA O ÍCONE DE CARRINHO DA BARRA DE MENU SUPERIOR */
 .cart-icon {
+    margin-right: 20px;
     position: relative;
 }
 
-/* Ícone de perfil com cor personalizada */
+/* EDITA A COR DO ÍCONE DE CARRINHO */
 .cart-icon i {
-    color: #ffffff; /* Cor azul */
+    color: white;
 }
 
-/* Mudança de cor ao passar o mouse */
+/* MUDA A COR DO ÍCONE DE CARRINHO AO PASSAR O MOUSE EM CIMA DELE */
 .cart-icon i:hover {
-    color: #0095da; /* Cor azul ao passar o mouse */
+    color: #308DF8; /* TALVEZ MUDAR: Cor azul ao passar o mouse */
 }
 
-.cart-icon::after {
-    content: '3'; /* Exemplo de quantidade de itens no carrinho */
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: rgb(255, 4, 4);
-    color: white;
-    border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 12px;
-}
-/* Ícone de perfil com cor personalizada */
-.profile-icon i {
-    color: #ffffff; /* Cor azul */
-    margin-right: 20px;
-}
+/* ORGANIZANDO O MIOLO DA PÁGINA DE PRODUTOS */
 
-/* Mudança de cor ao passar o mouse */
-.profile-icon i:hover {
-    color: #0095da; /* Cor azul ao passar o mouse */
-}
-
-
-.icon profile-icon::after {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: rgb(255, 255, 255);
-    color: white;
-    border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 12px;
-}
-
-/* Estilo do Banner */
-.banner {
-    width: 100%;
-}
-
-.banner img {
-    width: 100%;
-    border-radius: 0%;
-    display: block;
-}
-
-
-
-
-
-
-/* PÁGINA DE COMPRAS ORGANIZAÇÃO */
-.pg-comp-container { /* Container que engloba todo o miolo da página */
+/* Container que engloba todo o miolo da página, exceto o menu */
+.pg-comp-container {
     font-family: Roboto, sans-serif;
     background-color: #308DF8;
+
+    /* centraliza o pg-comp-principal no meio do pg-comp-container */
     display: flex;
-    padding-top: 3vh;
-    padding-bottom: 5vh;
-}
-
-.pg-comp-filtro-lateral { /* Filtro lateral esquerdo */
-    justify-content: left;
-    width: 45vh;
-    height: 50%;
-    font-weight: bold;
-    background-color: #f4f4f4;
-    margin: 96px 12px;
-    padding: 15px;
-}
-
-.pg-comp-filtro-lateral-item { /* Retângulos dentro do filtro lateral */
-    margin-bottom: 20px;
-}
-
-.pg-comp-filtro-lateral-item:hover { /* Põe sombra nos retângulos internos do filtro */
-    box-shadow: 4px 3px 3px #c7c7c7;
-}
-
-.pg-comp-filtro-lateral-titulo { /* Edita o título dos itens do menu e o ícone de plus */
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    background-color: #ddd;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.toggle-btn { /* Edita o ícone de plus */
-    background: none;
-    border: none;
-    font-size: 2.1vh;
-    cursor: pointer;
-}
-
-.pg-comp-principal { /* Container que engloba a caixa com as imagens */
-    padding: 15px;
-}
-
-.pg-comp-filtro-sup { /* Edita o filtro superior com ordenador, buscador, e mudança de visualização */
-    display: flex;
-    width: 100vh;
-    align-items: center;
-    justify-content: space-evenly;
-    justify-self: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.barra-pesquisa-filtro { /* ORGANIZA A DISPOSIÇÃO DO FILTRO SUP */
-    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.barra-pesquisa-filtro input { /*edita o espaço de escrever do balao de pesquisa etc */
-    width: 100%;
-    padding: 10px;
-    border-radius: 20px 0 0 20px;
-    border: none;
-    outline: none;
-}
 
-.barra-pesquisa-filtro .search-btn{ /* edita o botao dentro do ngc de pesquisa */
-    font-size: 16.5px;
-    background-color: white;
-    border: none;
-    padding: 8px 8px;
-    border-radius: 0 30px 30px 0;
-    cursor: pointer;
-}
-
-.barra-pesquisa-filtro .search-btn i { /*muda a cor do icone do font awesome */
-    color: black;
-}
-
-
-
-.filtro-ordenacao { /* Edita especificamente os ícones de seta e grade */
-    color: #ffffff;
-    font-size: 3.5vh;
-    padding: 8px;
-    cursor: pointer;
+/* Container que engloba o retângulo branco com as imagens dos produtos */
+.pg-comp-principal {
+    padding: 16vh;
 }
 
 #pg-comp-container-grade{ /* põe cor de fundo no container dos cards */
@@ -287,45 +138,35 @@ header {
     box-shadow: 3px 5px 5px #c0c0c0;
 }
 
-
-/* edita o ícone de elipses */
-#icone-elipses {
-    display: flex;
-    justify-content: center;
-    font-size: 10vh;
-    color: #D3D3D3;
+#finalizeBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 9px;
+    background-color: #007BFF; /* Cor azul */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
 }
 
-footer {
-    background-color: #000000;
-    color: #FFFFFF;
-    width: 100%;  /* Ocupa 100% da largura da tela */  
+#finalizeBtn:hover {
+    transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
 }
 
-footer p{
-    padding: 1vh;
-    text-align: center;
-    font-size:1.3rem;
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
 
-footer a{
-    text-decoration: none;
-    color: #fff;
-    margin: 0;
-    font-size: 1.4rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
 
-footer a:hover{
-    color: #308DF8;
-}
+
+
+
+
+
+
 
 /* Responsividade */
 

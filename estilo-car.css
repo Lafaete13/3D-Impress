@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Lalezar&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        body { 
+            font-family: Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: #171528;
+            text-align: center;
+        }
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .center-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        
+        .icon {
+            color: white;
+            font-size: 3vh;
+            cursor: pointer;
+        }
+        
+        .home-icon img {
+            margin-right: auto;
+            width: 60px;
+            padding: 10px;
+        }
+        
+        .menu-icon {
+            margin-right: 20px; /* Adiciona espaço entre o botão do menu e o input de pesquisa */
+        }
+        
+        
+        .cart-icon {
+            position: relative;
+        }
+
+        header,h1{
+            color: white;
+           
+        }
+
+        h2 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .cart-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .cart-item button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .cart-item button:hover {
+            background-color: #d32f2f;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            
+        }
+
+        .actions button {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .actions .finalize {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .actions .finalize:hover {
+            background-color: #45a049;
+        }
+
+        .actions .cancel {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .actions .cancel:hover {
+            background-color: #d32f2f;
+        }
