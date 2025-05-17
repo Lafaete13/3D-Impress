@@ -30,7 +30,7 @@ Funcionalidades
 Como executar o projeto
 
 1. Clone o repositório:
-```bash
+```bash```
 git clone https://github.com/Lafaete13/3D-Impress
 
 Estrutura de Pastas
@@ -46,3 +46,8 @@ Estrutura de Pastas
 ├── script.js              # Scripts JavaScript para interatividade
 ├── LICENSE                # Licença MIT
 └── README.md              # Documentação do projeto
+
+Comentários e Sugestões
+
+Se você tiver alguma dúvida, sugestão ou feedback, fique à vontade para abrir uma [Issue](https://github.com/Lafaete13/3D-Impress/issues). Vamos adorar ouvir sua opinião!
+
