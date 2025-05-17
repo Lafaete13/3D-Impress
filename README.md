@@ -47,7 +47,8 @@ Estrutura de Pastas
 ├── LICENSE                # Licença MIT
 └── README.md              # Documentação do projeto
 
-Comentários e Sugestões
+Participe das Discussões
 
-Se você tiver alguma dúvida, sugestão ou feedback, fique à vontade para abrir uma [Issue](https://github.com/Lafaete13/3D-Impress/issues). Vamos adorar ouvir sua opinião!
+Tem uma ideia, sugestão ou dúvida? Junte-se à conversa na aba [Discussions](https://github.com/Lafaete13/3D-Impress/discussions).
+
 
