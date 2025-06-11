@@ -59,6 +59,26 @@ h1{
     color: #308DF8; /* TALVEZ MUDAR: Cor azul ao passar o mouse */
 }
 
+.profile-icon {
+    margin-right: 20px;
+    color: #ffffff; /* ou outra cor desejada */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.profile-icon:hover {
+    color: #ffffff; /* azul ao passar o mouse, por exemplo */
+}
+
+.profile-icon i {
+    color: #ffffff; /* Cor azul */
+}
+
+/* Mudança de cor ao passar o mouse */
+.profile-icon i:hover {
+    color: #0095da; /* Cor azul ao passar o mouse */
+}
+
 /* ORGANIZANDO O MIOLO DA PÁGINA DE PRODUTOS */
 
 /* Container que engloba todo o miolo da página, exceto o menu */

@@ -30,7 +30,7 @@ header {
 
 .icon {
     color: white;
-    font-size: 5vh;
+    font-size: 6vh;
     cursor: pointer;
 }
 
@@ -58,6 +58,27 @@ header {
 .cart-icon i:hover {
     color: #0095da; /* Cor azul ao passar o mouse */
 }
+
+.profile-icon {
+    margin-right: 20px;
+    color: #ffffff; /* ou outra cor desejada */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.profile-icon:hover {
+    color: #ffffff; /* azul ao passar o mouse, por exemplo */
+}
+
+.profile-icon i {
+    color: #ffffff; /* Cor azul */
+}
+
+/* Mudança de cor ao passar o mouse */
+.profile-icon i:hover {
+    color: #0095da; /* Cor azul ao passar o mouse */
+}
+
 
 /* Estilo do Banner */
 .banner {
