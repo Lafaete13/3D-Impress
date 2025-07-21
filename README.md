@@ -64,7 +64,7 @@ Se você tiver alguma dúvida, sugestão ou feedback, fique à vontade para abri
 
 Você pode acessar a documentação completa do projeto 3D Impress, incluindo objetivos, justificativas, público-alvo, funcionalidades e muito mais, através do link abaixo:
 
-[Clique aqui para visualizar a documentação completa](https://docs.google.com/document/d/1zofqk3LEw1HANsm4EouS-kbWLUTX8dm5ka1kqQjkf0g/edit?usp=sharing)
+[Clique aqui para visualizar a documentação completa](https://docs.google.com/document/d/1C0LqqmQDGi-GS5GpgMtgncGz4CDQuMNo/edit?usp=sharing&ouid=102801556015030240096&rtpof=true&sd=true)
 
 
 

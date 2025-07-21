@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Lalezar&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* CONFIGS GLOBAIS DA PÁGINA */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  height: 100%;
+  font-family: Roboto, sans-serif;
+}
+
+/* CONFIGS DO CONTAINER QUE ENGLOBA A PÁGINA TODA */
+.container {
+  display: flex; /* deixa o menu e a parte de visualização de pedidos alinhadas horizontalmente */
+  height: 100vh;
+}
+
+/* MENU LATERAL */
+.container-menu {
+  width: 20%; /* tamanho total do retângulo da seção menu */
+  background-color: #171528; /* cor de fundo puxada pro preto */
+  color: white; /* cor das letras, exceto SAIR */
+  display: flex; /* faz os elementos internos da caixa "flutuarem" */
+  flex-direction: column; /*na direção vertical: um abaixo do outro */
+  align-items: center; /* centralizando o conteúdo: foto de perfil, textos */
+  padding-top: 40px;
+  justify-content: space-between; /* faz com que a parte da foto + textos de cima fiquem a boa distância do botão de sair */
+}
+
+/* MENU LATERAL: foto de perfil */
+.foto-de-perfil {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 100%; /* transforma o quadrado em elipse */
+  margin-bottom: 40px; /*abre um espaço dos textos: meu perfil + pedidos */
+}
+
+
+/* MENU LATERAL: meu perfil + pedidos */
+.menu {
+  display: flex; /* faz eles "flutuarem" */
+  flex-direction: column; /* um embaixo do outro */
+  gap: 30px; /* espaçamento entre eles */
+}
+
+/* MENU LATERAL: meu perfil + pedidos -> configura o texto em si */
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* MENU LATERAL: botão de sair e suas configurações */
+.botao-sair {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+/* Área central */
+.pedidos {
+  flex: 1;
+  background: url('../img/pedidos.png') no-repeat center center;
+  background-size: cover; /* faz a imagem cobrir todo o retângulo disponível */
+}

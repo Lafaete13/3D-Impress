@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3D Produtos</title>
+    <meta name="author" content="Lafaete Dias, Caio Miranda, Daniel Viana" />
+    <meta name="keywords" content="impressão 3D, 3d, impressao, impressora"/>
+    <meta name="description" content="A 3D Impress é uma loja especializada em produtos de impressão">
+
+    <link rel="stylesheet" type="text/css" href="css/estilo-pag-comp.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <nav class="navbar">
+
+            <!-- ÍCONE DE HOME DA LOJA -->
+            <div class="icon home-icon">
+                <a href="index.html"><img class="home" src="img/logo.png"/></a>
+            </div>
+
+           
+            <div class="center-container">
+                     <!-- TÍTULO DA PÁGINA -->
+            <h1>PRODUTOS</h1>
+            </div>
+
+            <!-- ÍCONE DO CARRINHO -->
+            <a href="carrinho.html">
+                <div class="icon cart-icon" onclick="openCart()"><i class="fas fa-shopping-cart"></i></div> 
+            </a>
+            
+            <div class="icon profile-icon">
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- SEÇÃO DE PRODUTOS -->
+
+    <!-- CONTAINER QUE ENGLOBA TODA A PARTE CENTRAL DA PÁGINA -->
+    <section class="pg-comp-container">
+
+        <main class="pg-comp-principal">
+        <section id="pg-comp-container-grade">
+                <div class="pg-comp-grade">
+
+                    <!-- Produto 1 -->
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/diabo.png" alt="Produto 1">
+                        <div class="pg-comp-grade-botoes">
+                            <button class="pg-comp-grade-produtos-botao1"><p>R$ 350,00</p></button>
+                            <button class="pg-comp-grade-produtos-botao2" onclick="adicionarAoCarrinho('Boneco Diabo Alcoólatra', 350)"><p>Comprar</p></button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 2 -->
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/orus.png" alt="Produto 2">
+                        <div class="pg-comp-grade-botoes">
+                            <button class="pg-comp-grade-produtos-botao1"><p>R$ 170,00</p></button>
+                            <button class="pg-comp-grade-produtos-botao2" onclick="adicionarAoCarrinho('Boneco Orus', 170)"><p>Comprar</p></button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 3 -->
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/camaleao.png" alt="Produto 3">
+                        <div class="pg-comp-grade-botoes">
+                            <button class="pg-comp-grade-produtos-botao1"><p>R$ 200,00</p></button>
+                            <button class="pg-comp-grade-produtos-botao2" onclick="adicionarAoCarrinho('Réplica Camaleão', 200)"><p>Comprar</p></button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 4 -->
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/cacto.png" alt="Produto 3">
+                        <div class="pg-comp-grade-botoes">
+                            <button class="pg-comp-grade-produtos-botao1"><p>R$ 150,00</p></button>
+                            <button class="pg-comp-grade-produtos-botao2" onclick="adicionarAoCarrinho('Cacto Miniatura', 150)"><p>Comprar</p></button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 5 -->
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/elves.png" alt="Produto 3">
+                        <div class="pg-comp-grade-botoes">
+                            <button class="pg-comp-grade-produtos-botao1"><p>R$ 99,90</p></button>
+                            <button class="pg-comp-grade-produtos-botao2" onclick="adicionarAoCarrinho('Boneco Gnomo', 99.90)"><p>Comprar</p></button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 6 -->
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/luminaria.png" alt="Produto 3">
+                        <div class="pg-comp-grade-botoes">
+                            <button class="pg-comp-grade-produtos-botao1"><p>R$ 100,00</p></button>
+                            <button class="pg-comp-grade-produtos-botao2" onclick="adicionarAoCarrinho('Objeto Luminária', 100)"><p>Comprar</p></button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 7 -->
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/bicho.webp" alt="Produto 3">
+                        <div class="pg-comp-grade-botoes">
+                            <button class="pg-comp-grade-produtos-botao1"><p>R$ 70,00</p></button>
+                            <button class="pg-comp-grade-produtos-botao2" onclick="adicionarAoCarrinho('Boneco Bicho', 70)"><p>Comprar</p></button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 8 -->
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/age.png" alt="Produto 3">
+                        <div class="pg-comp-grade-botoes">
+                            <button class="pg-comp-grade-produtos-botao1"><p>R$ 350,00</p></button>
+                            <button class="pg-comp-grade-produtos-botao2" onclick="adicionarAoCarrinho('Conjunto Bonecos', 350)"><p>Comprar</p></button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 9 -->
+                    <div class="pg-comp-grade-produtos">
+                        <img src="img/dog.png" alt="Produto 3">
+                        <div class="pg-comp-grade-botoes">
+                            <button class="pg-comp-grade-produtos-botao1"><p>R$ 100,00</p></button>
+                            <button class="pg-comp-grade-produtos-botao2" onclick="adicionarAoCarrinho('Réplica Cachorro', 100)"><p>Comprar</p></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BOTÃO FLUTUANTE DE FINALIZAR COMPRA -->
+            <a href="carrinho.html"><button id="finalizeBtn">Finalizar Compra</button></a>
+        </main>
+
+
+    </section>
+
+    <script>
+        // Função para adicionar produtos ao Local Storage
+        function adicionarAoCarrinho(nome, preco) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ nome, preco });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(`${nome} foi adicionado ao carrinho!`);
+        }
+
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
